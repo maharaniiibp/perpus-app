@@ -33,21 +33,26 @@ if(mysqli_num_rows($queryAdmin) > 0){
 // LOGIN SISWA
 // ====================
 
-$querySiswa = mysqli_query($conn,
-"SELECT * FROM siswa
+$querySiswa = mysqli_query($conn,"
+SELECT *
+FROM siswa
 WHERE nis='$username'
-AND password='$password'");
+");
 
 if(mysqli_num_rows($querySiswa) > 0){
 
     $data = mysqli_fetch_assoc($querySiswa);
 
-    $_SESSION['id'] = $data['id_siswa'];
-    $_SESSION['nama'] = $data['nama_siswa'];
-    $_SESSION['role'] = "siswa";
+    if(password_verify($password, $data['password'])){
 
-    header("Location: ../siswa/dashboard.php");
-    exit;
+        $_SESSION['id'] = $data['id_siswa'];
+        $_SESSION['nama'] = $data['nama_siswa'];
+        $_SESSION['role'] = "siswa";
+
+        header("Location: ../siswa/dashboard.php");
+        exit;
+
+    }
 
 }
 

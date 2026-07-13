@@ -50,70 +50,99 @@ z-index:1050;
 
     </div>
 
-    <!-- Menu -->
+<!-- Menu -->
 
-    <div class="px-3 mt-4">
+<div class="px-3 mt-4">
 
-        <a
-            href="dashboard.php"
-            class="btn w-100 text-start mb-3 <?= ($current=="dashboard.php") ? "btn-primary" : "btn-dark"; ?>"
-            style="border-radius:14px;padding:13px;">
+    <!-- Dashboard -->
 
-            <i class="bi bi-grid me-2"></i>
+    <a
+        href="dashboard.php"
+        class="btn w-100 text-start mb-3 <?= ($current=="dashboard.php") ? "btn-primary" : "btn-dark"; ?>"
+        style="border-radius:14px;padding:13px;">
 
-            Dashboard
+        <i class="bi bi-grid me-2"></i>
 
-        </a>
+        Dashboard
 
-
-        <a
-            href="buku.php"
-            class="btn w-100 text-start mb-3 <?= ($current=="buku.php") ? "btn-primary" : "btn-dark"; ?>"
-            style="border-radius:14px;padding:13px;">
-
-            <i class="bi bi-book me-2"></i>
-
-            Data Buku
-
-        </a>
+    </a>
 
 
-        <a
-            href="peminjaman.php"
-            class="btn w-100 text-start mb-3 <?= ($current=="peminjaman.php") ? "btn-primary" : "btn-dark"; ?>"
-            style="border-radius:14px;padding:13px;">
 
-            <i class="bi bi-arrow-left-right me-2"></i>
+    <!-- Buku -->
 
-            Data Peminjaman
+    <a
+        href="buku.php"
+        class="btn w-100 text-start mb-3 <?= ($current=="buku.php" || $current=="tambah_buku.php" || $current=="edit_buku.php" || $current=="detail_buku.php") ? "btn-primary" : "btn-dark"; ?>"
+        style="border-radius:14px;padding:13px;">
 
-        </a>
+        <i class="bi bi-book me-2"></i>
 
+        Data Buku
 
-        <a
-            href="pengembalian.php"
-            class="btn w-100 text-start mb-3 <?= ($current=="pengembalian.php") ? "btn-primary" : "btn-dark"; ?>"
-            style="border-radius:14px;padding:13px;">
-
-            <i class="bi bi-journal-check me-2"></i>
-
-            Data Pengembalian
-
-        </a>
+    </a>
 
 
-        <a
-            href="laporan.php"
-            class="btn w-100 text-start mb-3 <?= ($current=="laporan.php") ? "btn-primary" : "btn-dark"; ?>"
-            style="border-radius:14px;padding:13px;">
 
-            <i class="bi bi-bar-chart me-2"></i>
+    <!-- Siswa -->
 
-            Laporan
+    <a
+        href="siswa.php"
+        class="btn w-100 text-start mb-3 <?= ($current=="siswa.php" || $current=="tambah_siswa.php" || $current=="edit_siswa.php" || $current=="detail_siswa.php") ? "btn-primary" : "btn-dark"; ?>"
+        style="border-radius:14px;padding:13px;">
 
-        </a>
+        <i class="bi bi-people me-2"></i>
 
-    </div>
+        Data Siswa
+
+    </a>
+
+
+
+    <!-- Peminjaman -->
+
+    <a
+        href="peminjaman.php"
+        class="btn w-100 text-start mb-3 <?= ($current=="peminjaman.php" || $current=="tambah_peminjaman.php" || $current=="edit_peminjaman.php" || $current=="detail_peminjaman.php") ? "btn-primary" : "btn-dark"; ?>"
+        style="border-radius:14px;padding:13px;">
+
+        <i class="bi bi-arrow-left-right me-2"></i>
+
+        Data Peminjaman
+
+    </a>
+
+
+
+    <!-- Pengembalian -->
+
+    <a
+        href="pengembalian.php"
+        class="btn w-100 text-start mb-3 <?= ($current=="pengembalian.php" || $current=="tambah_pengembalian.php" || $current=="edit_pengembalian.php" || $current=="detail_pengembalian.php") ? "btn-primary" : "btn-dark"; ?>"
+        style="border-radius:14px;padding:13px;">
+
+        <i class="bi bi-journal-check me-2"></i>
+
+        Data Pengembalian
+
+    </a>
+
+
+
+    <!-- Laporan -->
+
+    <a
+        href="laporan.php"
+        class="btn w-100 text-start mb-3 <?= ($current=="laporan.php") ? "btn-primary" : "btn-dark"; ?>"
+        style="border-radius:14px;padding:13px;">
+
+        <i class="bi bi-bar-chart me-2"></i>
+
+        Laporan
+
+    </a>
+
+</div>
 
     <!-- Logout -->
 

@@ -65,7 +65,7 @@
 
                                 <label class="form-label fw-semibold">
 
-                                    NIS / Username
+                                    NIS
 
                                 </label>
 

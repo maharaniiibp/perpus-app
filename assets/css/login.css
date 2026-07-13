@@ -1,0 +1,103 @@
+body{
+    font-family:'Poppins',sans-serif;
+    background:url("../image/bg-login.png") no-repeat center center;
+    background-size:cover;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+/* CARD */
+
+.login-card{
+
+    width:390px;          /* sebelumnya 430px */
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#fff;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+
+}
+
+/* LOGO */
+
+.logo{
+
+    width:52px;
+
+}
+
+/* JUDUL */
+
+h3{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    line-height:28px;
+
+}
+
+/* SUBTITLE */
+
+.card p{
+
+    font-size:13px;
+
+}
+
+/* LABEL */
+
+.form-label{
+
+    font-size:14px;
+
+}
+
+/* INPUT */
+
+.form-control{
+
+    height:44px;
+
+    font-size:14px;
+
+}
+
+.input-group-text{
+
+    background:#fff;
+
+}
+
+/* BUTTON */
+
+.btn-primary{
+
+    height:44px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+/* COPYRIGHT */
+
+.footer-text{
+
+    position:fixed;
+
+    bottom:15px;
+
+    width:100%;
+
+    font-size:12px;
+
+    color:#444;
+
+}

@@ -1,0 +1,179 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#F6F8FC;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:250px;
+    height:100vh;
+
+    background:#131B2E;
+
+    padding:20px 15px;
+
+    display:flex;
+    flex-direction:column;
+
+    z-index:999;
+
+}
+
+/* Logo */
+
+.sidebar-header{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    margin-bottom:35px;
+
+}
+
+.sidebar-header img{
+
+    width:42px;
+    height:42px;
+    object-fit:contain;
+
+}
+
+.sidebar-header h5{
+
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
+    line-height:22px;
+
+}
+
+.sidebar-header small{
+
+    color:#A6AEC7;
+    font-size:10px;
+    letter-spacing:1px;
+
+}
+
+/* Menu */
+
+.sidebar .nav-link{
+
+    color:#BFC6DA;
+
+    padding:12px 15px;
+
+    border-radius:10px;
+
+    margin-bottom:8px;
+
+    display:flex;
+    align-items:center;
+
+    transition:.3s;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.sidebar .nav-link i{
+
+    font-size:17px;
+
+    margin-right:12px;
+
+}
+
+.sidebar .nav-link:hover{
+
+    background:#1E5EFF;
+
+    color:#fff;
+
+}
+
+.sidebar .nav-link.active{
+
+    background:#1E5EFF;
+
+    color:#fff;
+
+}
+
+/* Logout */
+
+.logout-area{
+
+    margin-top:auto;
+
+    padding-top:15px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.logout-btn{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#FF5C5C;
+
+    font-size:14px;
+
+    text-decoration:none;
+
+    background:none;
+
+    border:none;
+
+    padding:10px;
+
+}
+
+.logout-btn:hover{
+
+    color:white;
+
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.content{
+
+    margin-left:250px;
+
+    min-height:100vh;
+
+    padding:25px;
+
+}

@@ -1,18 +1,14 @@
 FROM php:8.3-apache
 
-RUN apt-get update \
- && apt-get install -y --no-install-recommends \
-      default-mysql-client \
- && docker-php-ext-install mysqli pdo pdo_mysql \
- && a2enmod rewrite \
- && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && \
+    docker-php-ext-install mysqli pdo pdo_mysql && \
+    a2dismod mpm_event || true && \
+    a2dismod mpm_worker || true && \
+    a2enmod mpm_prefork && \
+    a2enmod rewrite
 
 COPY . /var/www/html/
 
-RUN chown -R www-data:www-data /var/www/html
-
 WORKDIR /var/www/html
-
-EXPOSE 80
 
 CMD ["apache2-foreground"]
